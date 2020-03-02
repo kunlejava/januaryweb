@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Array</title>
+</head>
+<body>
+    
+    <h1>Pick from our list of cars </h1>
+    <p id="disp"></p>
+
+    
+
+    <script>
+        var text, i;
+        var cars = ["Range Rover", "Volvo","BMW","KIA","Mercedi","Lexus"];
+        //document.getElementById("disp").innerHTML = cars;
+        var num = cars.length;
+
+        text = "<ul>";
+        for(i=0; i < num; i++){
+            text+= "<a href= >" + "<li>" + cars[i] + "</li>" + "</a>" ;
+        }
+        text += "</ul>";
+        document.getElementById("disp").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
